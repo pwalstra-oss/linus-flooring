@@ -7,6 +7,8 @@
 <meta name="description" content="Linus Flooring — 4.9-star hardwood installation, refinishing, LVP, tile and laminate in Glenview, Skokie, Arlington Heights and Chicago's North Shore. Free quotes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <style>
 :root{
   --bg:#f7f5ee; --paper:#fffdf8; --ink:#16201b; --muted:#6a726c;
@@ -28,7 +30,8 @@ a{color:inherit;text-decoration:none}
 /* header */
 header{position:sticky;top:0;z-index:20;background:rgba(247,244,239,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
-.logo{font-weight:700;font-size:18px;letter-spacing:3px;color:var(--ink)}
+.logo{display:flex;align-items:center;gap:11px;font-weight:700;font-size:17px;letter-spacing:3px;color:var(--ink)}
+.logo .mark{height:34px;width:auto}
 .logo b{color:var(--accent);font-weight:700}
 nav a{color:var(--muted);margin-left:32px;font-size:13.5px;font-weight:500;letter-spacing:.3px}
 nav a:hover{color:var(--ink)}
@@ -116,7 +119,7 @@ footer a:hover{color:var(--hi)}
 <body>
 
 <header><div class="wrap">
-  <div class="logo">LINUS <b>FLOORING</b></div>
+  <div class="logo"><img src="assets/mark-dark.png" alt="" class="mark"><span>LINUS <b>FLOORING</b></span></div>
   <nav>
     <a href="#services">Services</a>
     <a href="#why">Why Us</a>
@@ -213,15 +216,19 @@ footer a:hover{color:var(--hi)}
       <p>Tell us about the project and we'll get back to you the same day — usually within the hour.</p>
       <div class="ph-num"><small>Or call</small>(419) 967-7085</div>
     </div>
-    <form onsubmit="alert('Demo form — connect to email/Formspree to receive leads.');return false;">
+    <form id="quoteForm">
+      <input type="hidden" name="access_key" value="c42a1e9e-0755-4d90-b05b-faf38e564de0">
+      <input type="hidden" name="subject" value="New Quote Request — Linus Flooring">
+      <input type="hidden" name="from_name" value="Linus Flooring Website">
+      <input type="checkbox" name="botcheck" style="display:none !important" tabindex="-1" autocomplete="off">
       <div class="frow">
-        <div><label>Name</label><input required placeholder="Your name"></div>
-        <div><label>Phone</label><input required placeholder="(847) 000-0000"></div>
+        <div><label>Name</label><input name="Name" required placeholder="Your name"></div>
+        <div><label>Phone</label><input name="Phone" required placeholder="(847) 000-0000"></div>
       </div>
       <div class="frow">
-        <div><label>Email</label><input type="email" placeholder="you@email.com"></div>
+        <div><label>Email</label><input name="Email" type="email" placeholder="you@email.com"></div>
         <div><label>Project</label>
-          <select>
+          <select name="Project">
             <option>Hardwood installation</option>
             <option>Sand &amp; refinish</option>
             <option>Stairs</option>
@@ -232,10 +239,26 @@ footer a:hover{color:var(--hi)}
           </select>
         </div>
       </div>
-      <div class="full"><label>Details</label><textarea rows="4" placeholder="Rooms, approx. square footage, timeline..."></textarea></div>
+      <div class="full"><label>Details</label><textarea name="Details" rows="4" placeholder="Rooms, approx. square footage, timeline..."></textarea></div>
       <button class="btn" type="submit">Request My Free Quote</button>
-      <div class="note">Setup: connect this form to your email via Formspree (free) so leads reach you instantly.</div>
+      <div id="formMsg" class="note" style="display:none"></div>
     </form>
+    <script>
+    (function(){
+      var qf=document.getElementById('quoteForm');
+      qf.addEventListener('submit',async function(e){
+        e.preventDefault();
+        var btn=qf.querySelector('button'), msg=document.getElementById('formMsg');
+        btn.disabled=true; btn.textContent='Sending…'; msg.style.display='none';
+        try{
+          var res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(qf)))});
+          var j=await res.json();
+          if(j.success){ qf.innerHTML='<div style="padding:34px 0"><h3 class="serif" style="font-size:28px;color:var(--accent);margin-bottom:10px">Thank you — request received.</h3><p style="color:var(--muted)">We’ll reach out the same day. Need us sooner? Call (419) 967-7085.</p></div>'; }
+          else { throw new Error(j.message||'error'); }
+        }catch(err){ msg.style.display='block'; msg.style.color='#b3270f'; msg.textContent='Something went wrong — please call (419) 967-7085 and we’ll take care of you.'; btn.disabled=false; btn.textContent='Request My Free Quote'; }
+      });
+    })();
+    </script>
   </div>
 </section>
 
@@ -243,7 +266,7 @@ footer a:hover{color:var(--hi)}
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <span class="logo">LINUS <b>FLOORING</b></span>
+        <img src="assets/logo-full-light.png" alt="Linus Flooring" style="height:84px;width:auto;margin-bottom:14px;display:block">
         <p>Family-owned hardwood &amp; flooring craftsmen serving Glenview and Chicago's North Shore. Residential &amp; commercial.</p>
         <p style="margin-top:10px;color:#959a95">1349 Tinker Way, Glenview, IL 60025</p>
       </div>

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linus Flooring — Hardwood & Flooring Craftsmen · Glenview & the North Shore</title>
+<meta name="description" content="Linus Flooring — 4.9-star hardwood installation, refinishing, LVP, tile and laminate in Glenview, Skokie, Arlington Heights and Chicago's North Shore. Free quotes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f5ee; --paper:#fffdf8; --ink:#16201b; --muted:#6a726c;
+  --accent:#28332e; --accent-d:#10160f; --line:#e3e1d4; --dark:#1e3a2f;
+  --on-dark:#b6c4bb; --hi:#8fcaa8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+a{color:inherit;text-decoration:none}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:600;font-size:14px;padding:15px 30px;border-radius:2px;letter-spacing:.4px;transition:.18s;border:none;cursor:pointer}
+.btn:hover{background:var(--accent-d)}
+.btn-line{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff;padding:14px 29px}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.eyebrow{color:var(--accent);font-weight:600;letter-spacing:3px;font-size:11.5px;text-transform:uppercase}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(247,244,239,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-weight:700;font-size:18px;letter-spacing:3px;color:var(--ink)}
+.logo b{color:var(--accent);font-weight:700}
+nav a{color:var(--muted);margin-left:32px;font-size:13.5px;font-weight:500;letter-spacing:.3px}
+nav a:hover{color:var(--ink)}
+nav a.cta{color:var(--accent);font-weight:600}
+
+/* hero */
+.hero{background:var(--dark);color:#f3efe8;padding:120px 0 130px;position:relative}
+.hero .eyebrow{color:var(--hi)}
+.hero h1{font-weight:500;font-size:64px;line-height:1.05;letter-spacing:-.5px;margin:22px 0 24px;max-width:780px}
+.hero h1 em{font-style:italic;color:var(--hi)}
+.hero p{font-size:18px;color:var(--on-dark);max-width:520px;margin-bottom:38px;line-height:1.65}
+.hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.hero .meta{margin-top:46px;display:flex;gap:40px;border-top:1px solid #343933;padding-top:26px;max-width:560px}
+.hero .meta .v{font-family:'Cormorant Garamond',Georgia,serif;font-size:30px;color:#fff;line-height:1}
+.hero .meta .k{font-size:12.5px;color:#959a95;margin-top:6px;letter-spacing:.3px}
+
+/* generic section */
+section{padding:108px 0}
+.shead{max-width:600px;margin-bottom:60px}
+.shead h2{font-weight:500;font-size:42px;line-height:1.1;margin:14px 0 0;letter-spacing:-.3px}
+.shead.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc .it{background:var(--bg);padding:40px 34px;transition:.18s}
+.svc .it:hover{background:var(--paper)}
+.svc .num{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;color:var(--accent);opacity:.8}
+.svc h3{font-size:19px;font-weight:600;margin:16px 0 9px;letter-spacing:.2px}
+.svc p{color:var(--muted);font-size:14.5px;line-height:1.6}
+
+/* why */
+.why{background:var(--dark);color:#f0f2ef}
+.why .shead h2{color:#fff}
+.why .eyebrow{color:var(--hi)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
+.why-grid .v{font-family:'Cormorant Garamond',Georgia,serif;font-size:46px;color:var(--hi);line-height:1}
+.why-grid .l{font-size:14.5px;color:var(--on-dark);margin-top:12px;line-height:1.5}
+
+/* work */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ph{aspect-ratio:4/5;background:var(--paper);border:1px solid var(--line);display:flex;align-items:flex-end;padding:16px}
+.ph span{font-size:12px;color:#9a9f9a;letter-spacing:.3px}
+.work-foot{margin-top:34px}
+
+/* reviews */
+.rev{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:38px}
+.q .s{color:var(--accent);letter-spacing:3px;font-size:13px;margin-bottom:16px}
+.q p{font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;line-height:1.4;color:var(--ink)}
+.q .who{margin-top:18px;font-size:12.5px;color:var(--muted);letter-spacing:.4px;text-transform:uppercase;font-weight:600}
+
+/* quote */
+.qbox{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+.qbox .left h2{font-weight:500;font-size:42px;line-height:1.08;margin:14px 0 18px}
+.qbox .left p{color:var(--muted);font-size:16px;max-width:340px}
+.qbox .left .ph-num{margin-top:30px;font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;color:var(--ink)}
+.qbox .left .ph-num small{display:block;font-family:'Inter';font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+form .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+label{display:block;font-size:12px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:2px;font-size:15px;font-family:inherit;background:var(--paper);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.full{margin-bottom:18px}
+.note{font-size:12px;color:#7e827d;margin-top:14px;line-height:1.5}
+
+/* footer */
+footer{background:var(--dark);color:#9a9f9a;padding:70px 0 34px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:44px}
+footer .logo{color:#fff;font-size:18px;margin-bottom:14px;display:block}
+footer .logo b{color:var(--hi)}
+footer p{font-size:14px;line-height:1.7;margin-bottom:4px}
+footer h4{color:#fff;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;font-weight:600}
+footer a{display:block;margin-bottom:9px;font-size:14px;color:#9a9f9a}
+footer a:hover{color:var(--hi)}
+.fbot{border-top:1px solid #343933;padding-top:22px;font-size:12.5px;color:#7e827d;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media(max-width:880px){
+  .hero h1{font-size:42px} .shead h2,.qbox .left h2{font-size:32px}
+  .svc,.rev-grid{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr;gap:34px} .gal{grid-template-columns:1fr 1fr}
+  .qbox,.fgrid{grid-template-columns:1fr;gap:40px} nav{display:none}
+  .hero .meta{flex-wrap:wrap;gap:26px} form .frow{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <div class="logo">LINUS <b>FLOORING</b></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#work">Our Work</a>
+    <a href="#reviews">Reviews</a>
+    <a class="cta" href="#quote">Free Quote</a>
+  </nav>
+</div></header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Glenview &amp; Chicago's North Shore</div>
+    <h1 class="serif">Hardwood floors, done with <em>real</em> craftsmanship.</h1>
+    <p>Installation, refinishing, and custom staining by a crew that answers the phone, quotes it straight, and leaves your home cleaner than we found it.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#quote">Get a Free Quote</a>
+      <a class="btn btn-line" href="tel:+14199677085">(419) 967-7085</a>
+    </div>
+    <div class="meta">
+      <div><div class="v">4.9★</div><div class="k">Rated across review sites</div></div>
+      <div><div class="v">Same-day</div><div class="k">Quote turnaround</div></div>
+      <div><div class="v">Own crew</div><div class="k">No subcontractors</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">What we do</div>
+      <h2 class="serif">From bare subfloor to the final coat — one crew, the whole job.</h2>
+    </div>
+    <div class="svc">
+      <div class="it"><div class="num">01</div><h3>Hardwood Installation</h3><p>Solid &amp; engineered hardwood, installed and finished to last for generations.</p></div>
+      <div class="it"><div class="num">02</div><h3>Sand &amp; Refinish</h3><p>Tired floors brought back to life — including custom stain matching to your exact color.</p></div>
+      <div class="it"><div class="num">03</div><h3>Stairs</h3><p>Stair installation and refinishing that ties the whole home together.</p></div>
+      <div class="it"><div class="num">04</div><h3>Luxury Vinyl &amp; LVP</h3><p>Waterproof, durable, and handsome — ideal for busy homes, basements and rentals.</p></div>
+      <div class="it"><div class="num">05</div><h3>Tile &amp; Laminate</h3><p>Ceramic tile and laminate, installed clean and level the first time.</p></div>
+      <div class="it"><div class="num">06</div><h3>Trim &amp; Baseboard</h3><p>The finishing details that make a floor look truly professional.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Why Linus</div>
+      <h2 class="serif">Not the biggest. The ones who do it right.</h2>
+    </div>
+    <div class="why-grid">
+      <div><div class="v">4.9★</div><div class="l">Consistently top-rated by North Shore homeowners</div></div>
+      <div><div class="v">1 Day</div><div class="l">Transparent quotes, usually within the hour</div></div>
+      <div><div class="v">100%</div><div class="l">Our own trained crew — never subcontracted</div></div>
+      <div><div class="v">Clean</div><div class="l">Dust control, daily cleanup, careful in your home</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Our work</div>
+      <h2 class="serif">A portfolio you can stand on.</h2>
+    </div>
+    <div class="gal">
+      <div class="ph"><span>Hardwood install</span></div>
+      <div class="ph"><span>Refinished oak</span></div>
+      <div class="ph"><span>Staircase</span></div>
+      <div class="ph"><span>LVP / tile</span></div>
+    </div>
+    <div class="work-foot"><a class="btn" href="https://www.instagram.com/linusflooring/" target="_blank">See more on Instagram</a></div>
+  </div>
+</section>
+
+<section id="reviews" class="rev">
+  <div class="wrap">
+    <div class="shead center">
+      <div class="eyebrow">Reviews</div>
+      <h2 class="serif">In our customers' words.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="q"><div class="s">★★★★★</div><p>"Marius responded fast, gave a transparent quote, and the crew did fantastic work with real attention to detail."</p><div class="who">Verified · Angi</div></div>
+      <div class="q"><div class="s">★★★★★</div><p>"They tarped everything, controlled the dust, and cleaned up each night. Excellent work without cutting corners."</p><div class="who">Verified · Angi</div></div>
+      <div class="q"><div class="s">★★★★★</div><p>"Mixed a custom stain to get the exact color we wanted. Fair pricing, and they finished early."</p><div class="who">Verified · Angi</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap qbox">
+    <div class="left">
+      <div class="eyebrow">Free estimate</div>
+      <h2 class="serif">Let's talk about your floors.</h2>
+      <p>Tell us about the project and we'll get back to you the same day — usually within the hour.</p>
+      <div class="ph-num"><small>Or call</small>(419) 967-7085</div>
+    </div>
+    <form onsubmit="alert('Demo form — connect to email/Formspree to receive leads.');return false;">
+      <div class="frow">
+        <div><label>Name</label><input required placeholder="Your name"></div>
+        <div><label>Phone</label><input required placeholder="(847) 000-0000"></div>
+      </div>
+      <div class="frow">
+        <div><label>Email</label><input type="email" placeholder="you@email.com"></div>
+        <div><label>Project</label>
+          <select>
+            <option>Hardwood installation</option>
+            <option>Sand &amp; refinish</option>
+            <option>Stairs</option>
+            <option>Luxury vinyl (LVP)</option>
+            <option>Tile / laminate</option>
+            <option>Commercial</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+      </div>
+      <div class="full"><label>Details</label><textarea rows="4" placeholder="Rooms, approx. square footage, timeline..."></textarea></div>
+      <button class="btn" type="submit">Request My Free Quote</button>
+      <div class="note">Setup: connect this form to your email via Formspree (free) so leads reach you instantly.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <span class="logo">LINUS <b>FLOORING</b></span>
+        <p>Family-owned hardwood &amp; flooring craftsmen serving Glenview and Chicago's North Shore. Residential &amp; commercial.</p>
+        <p style="margin-top:10px;color:#959a95">1349 Tinker Way, Glenview, IL 60025</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+14199677085">(419) 967-7085</a>
+        <a href="#quote">Request a quote</a>
+        <a href="https://www.instagram.com/linusflooring/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/LinusFlooring/" target="_blank">Facebook</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Hardwood install</a>
+        <a href="#services">Sand &amp; refinish</a>
+        <a href="#services">LVP &amp; tile</a>
+        <a href="#services">Stairs &amp; trim</a>
+      </div>
+    </div>
+    <div class="fbot"><span>© 2026 Linus Flooring INC · Glenview, IL</span><span>Mon–Fri · 8AM–6PM</span></div>
+  </div>
+</footer>
+
+</body>
+</html>

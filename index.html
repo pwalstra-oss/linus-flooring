@@ -13,9 +13,9 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"HomeAndConstructionBusiness",
+  "@type":["HomeAndConstructionBusiness","GeneralContractor"],
   "name":"Linus Flooring",
-  "description":"Hardwood installation & refinishing, LVP, tile and laminate flooring in Glenview and Chicago's North Shore. Residential & commercial. 4.9-star rated.",
+  "description":"Flooring specialists and general contractor in Glenview and Chicago's North Shore. Hardwood installation & refinishing, LVP, tile and laminate — plus kitchen & bath remodels, drywall, painting and full home renovations. Residential & commercial. 4.9-star rated.",
   "image":"https://linusflooring.com/assets/logo-full-dark.png",
   "url":"https://linusflooring.com",
   "telephone":"+14199677085",
@@ -25,26 +25,26 @@
   "areaServed":["Glenview","Skokie","Arlington Heights","Wilmette","Northbrook","Evanston","Northfield","Chicago"],
   "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
   "sameAs":["https://www.instagram.com/linusflooring/","https://www.facebook.com/LinusFlooring/"],
-  "knowsAbout":["Hardwood floor installation","Hardwood refinishing","Luxury vinyl plank","Tile flooring","Laminate flooring","Stair installation"]
+  "knowsAbout":["Hardwood floor installation","Hardwood refinishing","Luxury vinyl plank","Tile flooring","Laminate flooring","Stair installation","Kitchen remodeling","Bathroom remodeling","Drywall installation","Interior painting","Home renovation","General contracting"]
 }
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Linus Flooring — Hardwood & Flooring Craftsmen · Glenview & the North Shore</title>
+<title>Linus Flooring — Flooring & General Contracting · Glenview & the North Shore</title>
 <link rel="canonical" href="https://linusflooring.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Linus Flooring">
-<meta property="og:title" content="Linus Flooring — Hardwood & Flooring · Glenview & the North Shore">
-<meta property="og:description" content="4.9-star hardwood installation, refinishing, LVP, tile & laminate. Free quotes — Glenview & Chicago's North Shore.">
+<meta property="og:title" content="Linus Flooring — Flooring & General Contracting · Glenview & the North Shore">
+<meta property="og:description" content="4.9-star flooring specialists — hardwood, refinishing, LVP & tile — plus kitchen & bath remodels, drywall & painting. One crew, whole-home. Free quotes.">
 <meta property="og:url" content="https://linusflooring.com/">
 <meta property="og:image" content="https://linusflooring.com/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Linus Flooring — Hardwood & Flooring · North Shore">
-<meta name="twitter:description" content="4.9★ hardwood install, refinishing, LVP & tile. Free quotes.">
+<meta name="twitter:title" content="Linus Flooring — Flooring & General Contracting · North Shore">
+<meta name="twitter:description" content="4.9★ flooring specialists + full-home contracting: remodels, tile, drywall & paint. Free quotes.">
 <meta name="twitter:image" content="https://linusflooring.com/assets/og-image.jpg">
-<meta name="description" content="Linus Flooring — 4.9-star hardwood installation, refinishing, LVP, tile and laminate in Glenview, Skokie, Arlington Heights and Chicago's North Shore. Free quotes.">
+<meta name="description" content="Linus Flooring — 4.9-star flooring specialists and general contractor in Glenview, Skokie, Arlington Heights and Chicago's North Shore. Hardwood, refinishing, LVP & tile, plus kitchen & bath remodels, drywall and painting. Free quotes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -101,6 +101,11 @@ section{padding:108px 0}
 .svc .num{font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;color:var(--accent);opacity:.8}
 .svc h3{font-size:19px;font-weight:600;margin:16px 0 9px;letter-spacing:.2px}
 .svc p{color:var(--muted);font-size:14.5px;line-height:1.6}
+.svc-label{display:flex;align-items:baseline;gap:14px;margin:0 0 22px}
+.svc-label .t{font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;color:var(--ink);letter-spacing:.2px}
+.svc-label .d{flex:1;height:1px;background:var(--line)}
+.svc-label .tag{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+.svc-group2{margin-top:56px}
 
 /* why */
 .why{background:var(--dark);color:#f0f2ef}
@@ -171,9 +176,9 @@ footer a:hover{color:var(--hi)}
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">Glenview &amp; Chicago's North Shore</div>
+    <div class="eyebrow">Flooring &amp; General Contracting · North Shore</div>
     <h1 class="serif">Hardwood floors, done with <em>real</em> craftsmanship.</h1>
-    <p>Installation, refinishing, and custom staining by a crew that answers the phone, quotes it straight, and leaves your home cleaner than we found it.</p>
+    <p>Flooring is what we're known for — installation, refinishing, and custom staining. And our crews handle the rest of the home too: kitchen &amp; bath remodels, tile, drywall and paint. One team, start to finish.</p>
     <div class="hero-cta">
       <a class="btn" href="#quote">Get a Free Quote</a>
       <a class="btn btn-line" href="tel:+14199677085" onclick="if(window.gtag)gtag('event','call_click',{event_category:'phone',event_label:'website'});">(419) 967-7085</a>
@@ -181,7 +186,7 @@ footer a:hover{color:var(--hi)}
     <div class="meta">
       <div><div class="v">4.9★</div><div class="k">Rated across review sites</div></div>
       <div><div class="v">Same-day</div><div class="k">Quote turnaround</div></div>
-      <div><div class="v">Own crew</div><div class="k">No subcontractors</div></div>
+      <div><div class="v">Own crews</div><div class="k">Floors to full remodels</div></div>
     </div>
   </div>
 </section>
@@ -190,8 +195,11 @@ footer a:hover{color:var(--hi)}
   <div class="wrap">
     <div class="shead">
       <div class="eyebrow">What we do</div>
-      <h2 class="serif">From bare subfloor to the final coat — one crew, the whole job.</h2>
+      <h2 class="serif">Flooring is our craft — contracting is our range.</h2>
+      <p style="color:var(--muted);font-size:16px;margin-top:16px;max-width:600px">Known for our floors, trusted for the whole home. From a single-room refinish to a full remodel, it's one crew from start to finish — no subcontractor runaround.</p>
     </div>
+
+    <div class="svc-label"><span class="t serif">Flooring</span><span class="tag">Our specialty</span><span class="d"></span></div>
     <div class="svc">
       <div class="it"><div class="num">01</div><h3>Hardwood Installation</h3><p>Solid &amp; engineered hardwood, installed and finished to last for generations.</p></div>
       <div class="it"><div class="num">02</div><h3>Sand &amp; Refinish</h3><p>Tired floors brought back to life — including custom stain matching to your exact color.</p></div>
@@ -199,6 +207,13 @@ footer a:hover{color:var(--hi)}
       <div class="it"><div class="num">04</div><h3>Luxury Vinyl &amp; LVP</h3><p>Waterproof, durable, and handsome — ideal for busy homes, basements and rentals.</p></div>
       <div class="it"><div class="num">05</div><h3>Tile &amp; Laminate</h3><p>Ceramic tile and laminate, installed clean and level the first time.</p></div>
       <div class="it"><div class="num">06</div><h3>Trim &amp; Baseboard</h3><p>The finishing details that make a floor look truly professional.</p></div>
+    </div>
+
+    <div class="svc-label svc-group2"><span class="t serif">General Contracting</span><span class="tag">Crews for everything</span><span class="d"></span></div>
+    <div class="svc">
+      <div class="it"><div class="num">07</div><h3>Kitchen &amp; Bath Remodels</h3><p>Full remodels — cabinets, countertops, tile and fixtures — managed end to end by one team.</p></div>
+      <div class="it"><div class="num">08</div><h3>Tile &amp; Renovations</h3><p>Backsplashes, showers and whole-home renovations, finished to the same standard as our floors.</p></div>
+      <div class="it"><div class="num">09</div><h3>Drywall &amp; Painting</h3><p>Drywall hang, patch and taping, plus clean interior and exterior painting.</p></div>
     </div>
   </div>
 </section>
@@ -212,7 +227,7 @@ footer a:hover{color:var(--hi)}
     <div class="why-grid">
       <div><div class="v">4.9★</div><div class="l">Consistently top-rated by North Shore homeowners</div></div>
       <div><div class="v">1 Day</div><div class="l">Transparent quotes, usually within the hour</div></div>
-      <div><div class="v">100%</div><div class="l">Our own trained crew — never subcontracted</div></div>
+      <div><div class="v">100%</div><div class="l">Our own trained crews — floors to full remodels, never subcontracted</div></div>
       <div><div class="v">Clean</div><div class="l">Dust control, daily cleanup, careful in your home</div></div>
     </div>
   </div>
@@ -271,6 +286,9 @@ footer a:hover{color:var(--hi)}
             <option>Stairs</option>
             <option>Luxury vinyl (LVP)</option>
             <option>Tile / laminate</option>
+            <option>Kitchen &amp; bath remodel</option>
+            <option>Drywall &amp; painting</option>
+            <option>Full renovation / other</option>
             <option>Commercial</option>
             <option>Not sure yet</option>
           </select>
@@ -304,7 +322,7 @@ footer a:hover{color:var(--hi)}
     <div class="fgrid">
       <div>
         <img src="assets/logo-full-light.png" alt="Linus Flooring" style="height:84px;width:auto;margin-bottom:14px;display:block">
-        <p>Family-owned hardwood &amp; flooring craftsmen serving Glenview and Chicago's North Shore. Residential &amp; commercial.</p>
+        <p>Family-owned flooring craftsmen &amp; general contractor serving Glenview and Chicago's North Shore. Floors, remodels &amp; renovations — residential &amp; commercial.</p>
         <p style="margin-top:10px;color:#959a95">1349 Tinker Way, Glenview, IL 60025</p>
       </div>
       <div>
@@ -316,10 +334,11 @@ footer a:hover{color:var(--hi)}
       </div>
       <div>
         <h4>Services</h4>
-        <a href="#services">Hardwood install</a>
-        <a href="#services">Sand &amp; refinish</a>
-        <a href="#services">LVP &amp; tile</a>
-        <a href="#services">Stairs &amp; trim</a>
+        <a href="#services">Hardwood &amp; refinishing</a>
+        <a href="#services">LVP, tile &amp; laminate</a>
+        <a href="#services">Kitchen &amp; bath remodels</a>
+        <a href="#services">Drywall &amp; painting</a>
+        <a href="#services">Renovations</a>
       </div>
     </div>
     <div class="fbot"><span>© 2026 Linus Flooring INC · Glenview, IL</span><span>Mon–Fri · 8AM–6PM</span></div>
